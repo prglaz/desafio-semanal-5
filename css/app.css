@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    padding: 0.5vw;
+}
+
+h1 {
+    font-family: 'Lucida Sans',
+        'Lucida Sans Regular',
+        'Lucida Grande',
+        'Lucida Sans Unicode',
+        Geneva,
+        Verdana,
+        sans-serif;
+    color: #D24C93;
+    /* font-size: 2em; */
+    font-weight: 100;
+    letter-spacing: 0.5em;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+
+h2 {
+    font-family: 'Lucida Sans',
+        'Lucida Sans Regular',
+        'Lucida Grande',
+        'Lucida Sans Unicode',
+        Geneva,
+        Verdana,
+        sans-serif;
+    color: #D24C93;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0.4em;
+    margin-bottom: 2%;
+}
+
+p {
+    font-family: 'Lucida Sans',
+        'Lucida Sans Regular',
+        'Lucida Grande',
+        'Lucida Sans Unicode',
+        Geneva,
+        Verdana,
+        sans-serif;
+    color: #2963B3;
+    font-size: 0.7em;
+    margin-bottom: 1%;
+    line-height: 150%;
+}
+
+header img {
+    width: 30%;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+
+.hoteles {
+    display: flex;
+}
+
+.fotoderecha {
+    order: 2;
+}
+
+.descripcionizquierda {
+    order: 1;
+    padding-right: 1vw;
+}
+
+.fotoizquierda {
+    order: 1;
+}
+
+.descripcionderecha {
+    order: 2;
+    padding-left: 1vw;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+}
+
+
+footer img {
+    width: 100%;
+    padding: 0.5vw;
+}
+
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    img {
+        width: 49%;
+        height: 49%;
+    }
+}
+
+@media (max-width: 990px) {
+    /* h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    } */
+
+    img {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media (max-width: 632px) {
+    .hoteles {
+        flex-direction: column;
+    }
+
+    .fotoderecha {
+        order: 1;
+    }
+
+    .descripcionizquierda {
+        order: 2;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    h2 {
+        margin-top: 4vh;
+    }
+}
